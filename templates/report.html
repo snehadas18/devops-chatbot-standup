@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Standup Report</title>
+</head>
+<body>
+  <h2>Team Standup Report</h2>
+  {% for r in reports %}
+    <div style="margin-bottom: 20px; border:1px solid #aaa; padding:10px;">
+      <b>{{ r.name }}</b><br>
+      <b>Yesterday:</b> {{ r.yesterday }}<br>
+      <b>Today:</b> {{ r.today }}<br>
+      <b>Blockers:</b> {{ r.blockers }}
+    </div>
+  {% else %}
+    <p>No reports submitted yet.</p>
+  {% endfor %}
+  <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>
