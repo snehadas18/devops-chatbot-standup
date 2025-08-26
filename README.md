@@ -14,4 +14,4 @@ docker build -t devops-chatbot-standup .
 docker run -p 5000:5000 devops-chatbot-standup
 2. Follow the link
 3. Answer the questions
-4. Check standup_report.txt for saved summaries
+4. Check standups.txt for saved summaries
