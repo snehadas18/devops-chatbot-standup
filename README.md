@@ -9,6 +9,9 @@ A simple Python chatbot that collects daily stand-up reports from team members a
 - Easy to run and customize
 
 ## How to Use
-1. Run chatbot.py in your terminal
-2. Answer the questions
-3. Check standup_report.txt for saved summaries
+1. Run with Docker
+docker build -t devops-chatbot-standup .
+docker run -p 5000:5000 devops-chatbot-standup
+2. Follow the link
+3. Answer the questions
+4. Check standup_report.txt for saved summaries
